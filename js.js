@@ -22,6 +22,12 @@ function result() {
       yes_count++;
     }
   }
+
+  if (yes_count + no_count != 2) {
+    alert("모든 문제에 답해주세요.");
+    return;
+  }
+
   if (yes_count == 2) {
     location.href = "result_3.html";
   } else if (yes_count == 1) {
